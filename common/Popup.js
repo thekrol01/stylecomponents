@@ -24,15 +24,15 @@ export default class Popup extends Component {
           <View style={{ flex:1, justifyContent: 'center', alignItems: 'center' }}>
               <View style={styles.ModalInsideView}>
                     <View style={styles.TextStyle}>
-                      {/* @ bert generriek componeneten kunnen hier */}
+                      {/* generriek componeneten kunnen hier */}
                       <Text>We waarderen je mening, daarvoor ontvang je *** punten.</Text>
                     </View>
                     <View style={styles.EmoconStyle}>
-                      {/* @ bert generriek componeneten kunnen hier */}
+                      {/* generriek componeneten kunnen hier */}
                       <Emocons />
                     </View>
                     <View style={styles.VoteStyle}>
-                      {/* @ bert generriek componeneten kunnen hier */}
+                      {/* generriek componeneten kunnen hier */}
                       <Button title="Stem en ontvang punten" onPress={() => { this.ShowModalFunction(!this.state.ModalVisibleStatus)} } />
                     </View>
                 </View>
