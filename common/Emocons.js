@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { StyleSheet, View, Modal, Text, Button, Image, Platform } from 'react-native';
-import { Svg } from 'expo';
 
 export default class Emocons extends Component {
  render() {
