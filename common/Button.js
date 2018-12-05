@@ -6,7 +6,7 @@ const Button = ({ onPress, disabled, children }) => {
   return (
     <TouchableOpacity onPress={onPress} disabled={disabled} style={buttonStyle}>
     <Text style={textStyle}>
-    {children}Button text
+      {children}
     </Text>
     </TouchableOpacity>
   );
@@ -17,17 +17,19 @@ const styles = {
   alignSelf: 'center',
   color: '#f5bd00',
   fontSize: 15,
-  paddingTop: 15,
-  paddingBottom: 15
  },
   buttonStyle: {
+    flex: 1,
     alignSelf: 'stretch',
+    height: 45,
     backgroundColor: '#3c3c3c',
-    borderRadius: 10,
+    borderRadius: 5,
     borderWidth: 0,
     borderColor: '#007aff',
     marginLeft: 5,
-    marginRight: 5
+    marginRight: 5,
+    justifyContent: 'center',
+    alignItems: 'center',
   }
 };
 
