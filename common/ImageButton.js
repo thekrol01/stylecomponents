@@ -5,7 +5,7 @@ import { FontAwesome } from '@expo/vector-icons';
 const ImageButton = ({ onPress, disabled, name, style }) => {
   return (
     <TouchableOpacity onPress={onPress} disabled={disabled} style={style} >
-    <FontAwesome name={name} size={32} color="black" />
+      <FontAwesome name={name} size={32} color="black" />
     </TouchableOpacity>
   );
 };
