@@ -1,22 +1,25 @@
 import React from 'react';
-import { View } from 'react-native';
+import { View, Text } from 'react-native';
+
+const CardSectionText = 'Ik ben een voorbeeld Cardsection';
 
 const CardSection = (props) => {
   return (
     <View style={[styles.containerStyle, props.style]}>
       {props.children}
+      <Text>{CardSectionText}</Text>
     </View>
   );
 };
 
 const styles = {
   containerStyle: {
-    borderBottomWidth: 1,
-    padding: 5,
-    backgroundColor: '#fff',
     justifyContent: 'flex-start',
     flexDirection: 'row',
-    borderColor: '#ddd',
+    borderBottomWidth: 3,
+    padding: 15,
+    backgroundColor: '#fff',
+    borderColor: '#f1f3f5',
     position: 'relative'
   }
 };
